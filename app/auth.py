@@ -1,6 +1,7 @@
 from crypt import methods
 from flask import Blueprint,render_template,redirect,url_for,request
-
+from . import db
+from .models import User, user
 auth = Blueprint("auth",__name__)
 
 @auth.route("login",methods=['GET','POST'])
@@ -11,12 +12,14 @@ def login():
 
 @auth.route("/sign_up",methods=['GET','POST'])
 def sign_up():
-    email =request.form.get("email")
-    username =request.form.get("username")
-    password1 =request.form.get("password1")
-    password2=request.form.get("password2")
-    return render_template("signup.html")
-    
+    if request.method == 'POSTS':
+     email =request.form.get("email")
+     username =request.form.get("username")
+     password1 =request.form.get("password1")
+     password2=request.form.get("password2")
+     return render_template("signup.html")
+
+     email_exists = user.query.filter_by(email=email).first()
 
 @auth.route("/logout")
 def logout():
