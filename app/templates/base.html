@@ -8,7 +8,21 @@
     <title>{% block title %} {% endblock %} </title>
 </head>
 <body>
-    <h1>home</h1>
+    <nav class="navbar navbar-expanded-lg navbar-dark  bg-dark">
+        <div class="container-fluid">
+            <button class="nabvar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/home">Home</a>
+                    <a class="nav-item nav-link" href="/login">log in</a> 
+                    <a class="nav-item nav-link" href="/sign_up">sign up</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
     <div>
         {% block content %}{% endblock %}
     </div>
