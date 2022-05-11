@@ -1,5 +1,3 @@
-
-  
 from . import db
 from flask_login import UserMixin  # this will check for four authentication properties in a user
 from sqlalchemy.sql import func

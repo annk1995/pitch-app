@@ -1,3 +1,5 @@
+
+  
 from flask import Flask  # import the Flask class from flask module
 from config import config_options
 from flask_sqlalchemy import SQLAlchemy
