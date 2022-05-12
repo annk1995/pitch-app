@@ -17,4 +17,4 @@ def make_shell_context():
     return dict(db=db,pitch=Pitch)
 
 if __name__ == '__main__':
-    manager.run()
+    app.run()
