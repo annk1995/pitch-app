@@ -17,4 +17,4 @@ def make_shell_context():
     return dict(db=db,pitch=Pitch)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0",port=7000)
