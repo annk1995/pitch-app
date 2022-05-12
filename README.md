@@ -32,6 +32,12 @@ bootstrap
 python
 
 sqllite
+# screenshot of the project
+
+![](https://file%2B.vscode-resource.vscode-cdn.net/home/riley12/Desktop/pitch-app/app/static/picture/Screenshot%20from%202022-05-12%2013-56-50.png?version%3D1652387649284)
+
+
+
 # Development
 Want to contribute?
 
